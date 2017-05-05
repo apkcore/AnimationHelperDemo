@@ -1,4 +1,4 @@
-package com.apkcore.animationhelperlibrary.helper;
+package com.apkcore.circularreveallib;
 
 import android.support.v7.app.AppCompatActivity;
 

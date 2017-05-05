@@ -1,1 +1,1 @@
-include ':app', ':circularrevealhelperlib'
+include ':app', ':circularreveallib'

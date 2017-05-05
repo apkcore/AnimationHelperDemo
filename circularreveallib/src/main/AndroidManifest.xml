@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 
-          package="com.apkcore.animationhelperlibrary"
+          package="com.apkcore.circularreveallib"
 >
 
     <application android:allowBackup="true"

@@ -1,4 +1,4 @@
-package com.apkcore.animationhelperlibrary.helper;
+package com.apkcore.circularreveallib;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.apkcore.animationhelperlibrary.helper.v1.ViewAnimationCompatUtils;
+import com.apkcore.circularreveallib.v1.ViewAnimationCompatUtils;
 
 /**
  * Created by Apkcore on 2017/5/4.

@@ -1,6 +1,6 @@
 package com.apkcore.animationhelperdemo;
 
-import com.apkcore.animationhelperlibrary.helper.BaseAnimationActivity;
+import com.apkcore.circularreveallib.BaseAnimationActivity;
 
 /**
  * Created by Apkcore on 2017/5/4.

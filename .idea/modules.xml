@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AnimationHelperDemo.iml" filepath="$PROJECT_DIR$/AnimationHelperDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circularrevealhelperlibrary/circularrevealhelperlibrary.iml" filepath="$PROJECT_DIR$/circularrevealhelperlibrary/circularrevealhelperlibrary.iml" />
     </modules>
   </component>
 </project>

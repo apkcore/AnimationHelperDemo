@@ -1,17 +1,15 @@
-package com.apkcore.animationhelperdemo.helper;
+package com.apkcore.animationhelperlibrary.helper;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.apkcore.animationhelperdemo.BaseActivity;
-import com.apkcore.animationhelperdemo.helper.v1.ViewAnimationCompatUtils;
+import com.apkcore.animationhelperlibrary.helper.v1.ViewAnimationCompatUtils;
 
 /**
  * Created by Apkcore on 2017/5/4.
@@ -87,7 +85,7 @@ public class AnimationHelper {
         hide(myView, MINI_RADIUS, DEFAULT_DURIATION, endVisible);
     }
 
-    public static void startActivityForResult(final BaseActivity thisActivity, final Intent intent,
+    public static void startActivityForResult(final BaseAnimationActivity thisActivity, final Intent intent,
                                               final Integer requestCode, final Bundle bundle,
                                               final View view, int colorOrImageRes, final long durationMills) {
 //        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
@@ -144,7 +142,7 @@ public class AnimationHelper {
 //                    imageview.setVisibility(View.GONE);
 //                    return;
 //                }
-                thisActivity.setResume(new BaseActivity.IonResume() {
+                thisActivity.setResume(new BaseAnimationActivity.IonResume() {
                     @Override
                     public void setResume() {
                         if (imageview.getVisibility()==View.VISIBLE){
@@ -192,22 +190,22 @@ public class AnimationHelper {
     }
 
     public static void startActivityForResult(
-            BaseActivity thisActivity, Intent intent, Integer requestCode, View triggerView, int colorOrImageRes) {
+            BaseAnimationActivity thisActivity, Intent intent, Integer requestCode, View triggerView, int colorOrImageRes) {
         startActivityForResult(thisActivity, intent, requestCode, null, triggerView, colorOrImageRes, DEFAULT_DURIATION);
     }
 
     public static void startActivity(
-            BaseActivity thisActivity, Intent intent, View triggerView, int colorOrImageRes, long durationMills) {
+            BaseAnimationActivity thisActivity, Intent intent, View triggerView, int colorOrImageRes, long durationMills) {
         startActivityForResult(thisActivity, intent, null, null, triggerView, colorOrImageRes, durationMills);
     }
 
     public static void startActivity(
-            BaseActivity thisActivity, Intent intent, View triggerView, int colorOrImageRes) {
+            BaseAnimationActivity thisActivity, Intent intent, View triggerView, int colorOrImageRes) {
         startActivity(thisActivity, intent, triggerView, colorOrImageRes, DEFAULT_DURIATION);
     }
 
 
-    public static void startActivity(BaseActivity thisActivity, Class<?> targetClass, View triggerView, int colorOrImageRes) {
+    public static void startActivity(BaseAnimationActivity thisActivity, Class<?> targetClass, View triggerView, int colorOrImageRes) {
         startActivity(thisActivity, new Intent(thisActivity, targetClass), triggerView, colorOrImageRes, DEFAULT_DURIATION);
     }
 }

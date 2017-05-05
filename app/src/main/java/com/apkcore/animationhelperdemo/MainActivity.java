@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.apkcore.animationhelperdemo.helper.AnimationHelper;
+import com.apkcore.animationhelperlibrary.helper.AnimationHelper;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
     private ImageView mImageView;

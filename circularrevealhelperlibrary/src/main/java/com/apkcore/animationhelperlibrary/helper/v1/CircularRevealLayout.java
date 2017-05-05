@@ -1,4 +1,4 @@
-package com.apkcore.animationhelperdemo.helper.v1;
+package com.apkcore.animationhelperlibrary.helper.v1;
 
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
